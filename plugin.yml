@@ -1,17 +1,14 @@
-name: Sword_Skill
-main: org.rintech.sword_skill.Main.java
-version: 0.02
-description: This plugin is Sword_Skill plugin
-# 作者が複数いる場合はauthorsを使用し、一人の場合はauthorを使用して下さい。
-author: tyuutorosan
-authors: [作者1, 作者2, 作者3]
-website: サイトのURL
+name:Sword_Skill
+main:org.rintech.sword_skill.Main
+version:0.1
+author:tyuutorosan
+description:Sword_Skill
 
 commands:
   test:
-    description: This is test command
-    aliases: [t, T]
-    permission: Swod_Skill.Lv1
+    description: テストコマンド
+    aliases: [他のコマンド名1, 他のコマンド名2]
+    permission: コマンドの権限
     usage: コマンドの使い方
   コマンド名:
     description: コマンドの説明
@@ -21,11 +18,12 @@ commands:
       コマンドの使い方1行目
       2行目
       3行目...
-
+ 
 permissions:
-  Sword_Skill.Lv1:
+  権限名1.*:
     description: 権限の説明
     children:
+      権限名1.権限名2: true
       権限名1.権限名3: true
       権限名1.権限名3.権限名4: true
   権限名1.権限名2:
