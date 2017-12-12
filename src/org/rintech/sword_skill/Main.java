@@ -44,7 +44,7 @@ public class Main extends JavaPlugin implements Listener {
 }
 
     @EventHandler
-    public void onLeftClick(PlayerInteractEvent event){
+    public void onRightClick(PlayerInteractEvent event){
     	System.out.println("イベントだよー");
     	Player player = event.getPlayer();
         Location loc = player.getEyeLocation();
