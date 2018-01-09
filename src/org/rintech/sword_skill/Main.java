@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -46,13 +47,16 @@ public class Main extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onRightClick(PlayerInteractEvent event){
+    if (event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.RIGHT_CLICK_AIR) {
     	System.out.println("イベントだよー");
     	Player player = event.getPlayer();
-        Location loc = player.getEyeLocation();
-        System.out.println("Xだよー" + loc.getX());
-        System.out.println("Yだよー" + loc.getY());
-        System.out.println("Zだよー" + loc.getZ());
+        String playername = player.getName();
+    	Location loc = player.getEyeLocation();
+        System.out.println(playername + "さんのXYZだよー" + loc.getX() +"、"+ loc.getY()+"、"+ loc.getZ());
+    }
+    else {
 
+    }
     }
 
 
