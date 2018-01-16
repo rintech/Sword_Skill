@@ -55,6 +55,7 @@ public class Main extends JavaPlugin implements Listener {
         System.out.println(playername + "さんのXYZだよー" + loc.getX() +"、"+ loc.getY()+"、"+ loc.getZ());
     }
     else {
+
     }
     }
 
