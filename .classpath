@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/snufk/Documents/Java/Workspace-git/Suicra/lib/spigot-1.9.4-R0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tento/Documents/pleiades-4.7.0-java-win-64bit-jre_20170628/pleiades/workspace/Sword_Skill/lib/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

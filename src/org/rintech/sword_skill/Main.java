@@ -21,6 +21,7 @@ public class Main extends JavaPlugin implements Listener {
 		System.out.println("プラグインが有効になりましたよー");
 		System.out.println("はいったよー");
 		getServer().getPluginManager().registerEvents(this, this);
+		getServer().getPluginManager().registerEvents(new Other(), this);
 	}
 
 	@Override
