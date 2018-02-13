@@ -12,6 +12,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.Vector;
 
 
 public class Main extends JavaPlugin implements Listener {
@@ -53,7 +54,9 @@ public class Main extends JavaPlugin implements Listener {
     	Player player = event.getPlayer();
         String playername = player.getName();
     	Location loc = player.getEyeLocation();
-        System.out.println(playername + "さんのXYZだよー" + loc.getX() +"、"+ loc.getY()+"、"+ loc.getZ());
+        Vector vec = player.getLocation().getDirection();
+
+        System.out.println(playername + "さんのXYZだよー" + loc.getX() +"、"+ loc.getY()+"、"+ loc.getZ()+"、"+vec.getX()+"、"+vec.getY()+"、"+vec.getZ());
     }
     else {
 
